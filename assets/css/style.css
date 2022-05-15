@@ -147,18 +147,33 @@ a {
 }
 
 .clock__minutes {
-    width: 136px;
-    height: 136px;
+  width: 136px;
+  height: 136px;
 }
 
 .clock__minutes::before {
-    content: '';
-    position: absolute;
-    background-color: var(--text-color);
-    width: 0.25rem;
-    height: 4rem;
-    border-radius: 0.75rem;
-    z-index: var(--z-normal);
+  content: "";
+  position: absolute;
+  background-color: var(--text-color);
+  width: 0.25rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  z-index: var(--z-normal);
+}
+
+.clock__seconds {
+  width: 130px;
+  height: 130px;
+}
+
+.clock__seconds::before {
+  content: "";
+  position: absolute;
+  background-color: var(--first-color);
+  width: 0.125rem;
+  height: 5rem;
+  border-radius: 0.75rem;
+  z-index: var(--z-normal);
 }
 
 @media screen and (min-width: 968px) {
